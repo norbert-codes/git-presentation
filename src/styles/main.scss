@@ -1,0 +1,48 @@
+// New to Stylus? Check out http://learnboost.github.io/stylus
+// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
+
+// Import CSS from "node_modules" and "bower_components"
+// thanks to Stylus' "import css" and "paths" options
+
+@import "/bower_components/prism/themes/prism.css";
+@import "https://fonts.googleapis.com/css?family=Lato";
+// Check out "bower_components/prism/themes/" for available themes
+$white: #f2f2f2;
+$quince-blue: #0172b4;
+
+body {
+  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+}
+.bespoke-slide {
+  background-color: $white;
+}
+
+.gitlogo {
+  max-width: 30%;
+}
+
+em, a {
+  color: $quince-blue;
+  font-style: normal;
+}
+
+.bigsize {
+  width: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.mindblown {
+    background-image: url(../images/mindblown.gif)
+  }
+
+  &.distributed {
+    background-image: url(../images/distributed.png);
+    background-size: contain;
+  }
+}

@@ -1,0 +1,9 @@
+.idea
+prepros.cfg
+*.iml
+*.ipr
+*.iws
+*.sublime-project
+.DS_Store
+node_modules/**
+bower_components/**
