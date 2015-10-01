@@ -46,8 +46,7 @@ gulp.task('css', ['clean:css'], function() {
     .pipe(sass().on('error', sass.logError))
     .pipe(sass({
       // Allow CSS to be imported from node_modules and bower_components
-      'include css': true,
-      'paths': ['./node_modules', './bower_components']
+      'include css': true
     }))
     .pipe(autoprefixer('last 2 versions', { map: false }))
     .pipe(isDist ? csso() : through())
