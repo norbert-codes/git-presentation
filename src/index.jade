@@ -71,13 +71,27 @@ html
             img.snapshot(src="images/snapshots.png")
 
       section
-        h2 Nearly Every Operation Is Local
+        h2 <small>Nearly</small> every operation is local
         ul
           li
           li Remember? You have the whole database mirrored.
           li For example, to browse the history of the project.
           li You can see the changes introduced between the current version of a file and the file a month ago instantly.
 
+      section
+        h2 The three states
+        ul
+          li
+          li <strong>comitted</strong> (safely stored in local database)
+          li <strong>modified</strong> (you changed it, but not stored in database yet)
+          li <strong>staged</strong> (changed and marked to be in next commit)
+          li + <strong>pushed</strong> (copied to the remote repository from local database)
+          li three main sections of a Git project: the Git directory, the working directory, and the staging area
+          li
+            img.snapshot(src="images/stages.png")
+
+      section.background.git-puzzled
+        h2.white You may feel like...
 
 
         //pre
