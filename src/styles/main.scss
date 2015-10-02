@@ -124,11 +124,20 @@ pre[class*="language-"] {
 
 
 $white: #fafafa;
+$transparent-white: rgba(255,255,255,.8);
 $quince-blue: #0172b4;
+$dark-grey: #303030;
+
+$default-font-stack: 'Lato', 'Helvetica', 'Arial', sans-serif;
 
 body {
-  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+  font-family: $default-font-stack;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $white;
 }
+
 .bespoke-slide {
   background-color: $white;
 }
@@ -165,7 +174,7 @@ small {
   }
 
   &.git-puzzled {
-    background-image: url(../images/git-training.gif);
+    background-image: url(../images/git_training.gif);
   }
 }
 
@@ -174,5 +183,6 @@ small {
 }
 
 .white {
-  color: $white;
+  color: $transparent-white;
+
 }

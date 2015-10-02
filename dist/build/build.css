@@ -99,7 +99,11 @@ pre[class*="language-"] {
   color: green; }
 
 body {
-  font-family: 'Lato', 'Helvetica', 'Arial', sans-serif; }
+  font-family: "Lato", "Helvetica", "Arial", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa; }
 
 .bespoke-slide {
   background-color: #fafafa; }
@@ -130,10 +134,10 @@ small {
   background-size: contain; }
 
 .background.git-puzzled {
-  background-image: url(../images/git-training.gif); }
+  background-image: url(../images/git_training.gif); }
 
 .snapshot {
   width: 70%; }
 
 .white {
-  color: #fafafa; }
+  color: rgba(255, 255, 255, 0.8); }
