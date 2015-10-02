@@ -40,18 +40,20 @@
             <h3>It allows you to:</h3>
           </li>
           <li>revert files back to a previous state</li>
-          <li>revert the entire project back to a previous state</li>
+          <li>revert the entire project</li>
           <li>compare changes over time</li>
-          <li>see who last modified something that might be causing a problem</li>
+          <li>see who modified something that might be causing a problem</li>
           <li>
-            <h4>generally, if you screw things up or lose files, you can easily recover</h4>
+            <h4>generally, if you screw things up, you can easily recover</h4>
           </li>
           <li>
-            <h4>and of course you can't overwrite each others work</h4>
+            <h4><em>and of course you can't overwrite each others work</em></h4>
           </li>
         </ul>
       </section>
-      <section class="background mindblown"></section>
+      <section class="background mindblown emphatic-text">
+        <h1 class="white">OMG!!!</h1>
+      </section>
       <section>
         <h2>How does this work?</h2>
         <ul>
@@ -61,21 +63,43 @@
         </ul>
       </section>
       <section class="background distributed"></section>
-      <!--section-->
-      <!--  h2 Syntax Highlighting-->
-      <!--  h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>-->
-      <!--  pre-->
-      <!--    code.language-javascript.-->
-      <!--      bespoke.from('article', [-->
-      <!--        classes(),-->
-      <!--        keys(),-->
-      <!--        touch(),-->
-      <!--        bullets('li, .bullet')-->
-      <!--      ]);-->
-      <!---->
-      <!--section.emphatic-text(data-bespoke-backdrop='emphatic')-->
-      <!--  h2 Emphatic Slide!-->
-      <!--  h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>-->
+      <section>
+        <h2>Snapshots baby!</h2>
+        <ul>
+          <li></li>
+          <li><strong>others:</strong> information as a list of file-based changes</li>
+          <li><strong>Git:</strong> "set of snapshots of a miniature filesystem"</li>
+          <li><small>Git takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored.</small></li>
+          <li><img src="images/snapshots.png" class="snapshot"></li>
+        </ul>
+      </section>
+      <section>
+        <h2><small>Nearly</small> every operation is local</h2>
+        <ul>
+          <li></li>
+          <li>Remember? You have the whole database mirrored.</li>
+          <li>For example, to browse the history of the project.</li>
+          <li>You can see the changes introduced between the current version of a file and the file a month ago instantly.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>The three states</h2>
+        <ul>
+          <li></li>
+          <li><strong>comitted</strong> (safely stored in local database)</li>
+          <li><strong>modified</strong> (you changed it, but not stored in database yet)</li>
+          <li><strong>staged</strong> (changed and marked to be in next commit)</li>
+          <li>+ <strong>pushed</strong> (copied to the remote repository from local database)</li>
+          <li>three main sections of a Git project: the Git directory, the working directory, and the staging area</li>
+          <li><img src="images/stages.png" class="snapshot"></li>
+        </ul>
+      </section>
+      <section class="background git-puzzled">
+        <h2 class="white">You may feel like...</h2>
+        <!--pre-->
+        <!--  code.language-git.-->
+        <!--    $ git push origin-master-->
+      </section>
     </article>
     <script src="build/build.js"></script>
   </body>
