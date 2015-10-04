@@ -114,9 +114,6 @@ body {
 .bespoke-progress-parent {
   height: 6px; }
 
-.gitlogo {
-  max-width: 30%; }
-
 em, a {
   color: #0172b4;
   font-style: normal; }
@@ -124,13 +121,21 @@ em, a {
 small {
   font-size: 70%; }
 
-.bigsize {
+.gitlogo {
+  max-width: 30%; }
+
+.fullw {
   width: 100%; }
 
+.inline-img {
+  max-width: 70%; }
+
+.white {
+  color: rgba(255, 255, 255, 0.8); }
+
 .background {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background: no-repeat center;
+  background-size: cover; }
 
 .background.mindblown {
   background-image: url(../images/mindblown.gif); }
@@ -142,8 +147,5 @@ small {
 .background.git-puzzled {
   background-image: url(../images/git_training.gif); }
 
-.snapshot {
-  width: 70%; }
-
-.white {
-  color: rgba(255, 255, 255, 0.8); }
+.background.git-workflow {
+  background-image: url(../images/git_workflow.png); }

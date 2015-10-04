@@ -34,7 +34,7 @@ html
 
       section
         h3 Just like a time machine
-        img.bigsize(src="images/backtothefuture.gif")
+        img.fullw(src="images/backtothefuture.gif")
 
 
       section
@@ -42,7 +42,7 @@ html
         ul
           li
           li
-            h3. It allows you to:
+            h3 It allows you to:
           li revert files back to a previous state
           li revert the entire project
           li compare changes over time
@@ -76,7 +76,7 @@ html
           li <strong>Git:</strong> "set of snapshots of a miniature filesystem"
           li <small>Git takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored.</small>
           li
-            img.snapshot(src="images/snapshots.png")
+            img.inline-img(src="images/snapshots.png")
 
 
       section
@@ -98,37 +98,64 @@ html
           li <strong>+ pushed</strong> (copied to the remote repository from local database)
           li three main sections of a Git project: the Git directory, the working directory, and the staging area
           li
-            img.snapshot(src="images/stages.png")
-
-
-      section.background.git-puzzled
-        h2.white You may feel like...
+            img.inline-img(src="images/stages.png")
 
 
       section
-        h3 Recording Changes to the Repository
+        h3 Recording changes to the repository
         ul
           li
-            img.snapshot(src="images/lifecycle.png")
+            img.inline-img(src="images/lifecycle.png")
           li files can be in two states: <strong>tracked or untracked</strong>
           li tracked files were in the last snapshot; they either <strong>unmodified,</strong> <strong>modified,</strong> or <strong>staged</strong>
           li as you edit files, Git sees them as <strong>modified,</strong> because you’ve changed them since your last commit
           li stage modified files and then <strong>commit all your staged changes,</strong> and the cycle repeats
 
+
+      section.background.git-puzzled
+        h2.white You may start to feel like...
+
+
       section
-        h2 ignore
-        h2 skipping staging area
-        img.snapshot(src="images/git_workflow.png")
+          h2 Ignoring files
+          ul
+            li
+            li Often, you’ll have a class of files that you don’t want Git to automatically add or even show you as being untracked.
+            li In such cases, you can create a file listing patterns to match them named <strong>.gitignore.</strong<>
+            li
+              pre
+                code.language-git.
+                  /.idea
+                  prepros.cfg
+                  *.iml
+                  *.sublime-project
+                  .DS_Store
+                  /node_modules
+
 
       section
-        h2 You may use terminal for it, but thats unnecessary deep shit and you will hardly use it in your workflow
-        h2 using it in intellij
-        h2 I will get you up and running
-        h2 git warning sign
+        h2 Skipping the staging area
+        p.fullw Although it can be amazingly useful for crafting commits exactly how you want them, the staging area is sometimes a bit more complex than you need in your workflow.
+        p.fullw If you want to skip the staging area, Git provides a simple shortcut.
+        ul
+          li
+          li
+            pre
+              code.language-git.
+                $ git commit -a
+            p makes Git automatically stage every file that is already tracked before doing the commit
 
 
-        //pre
-        //  code.language-git.
-        //    $ git push origin-master
+      section.background.git-workflow
+        h2.white Easy, huh?
+      //
+      //section
+      //  h2 You may use terminal for it, but thats unnecessary deep shit and you will hardly use it in your workflow
+      //  h2 using it in intellij
+      //  h2 I will get you up and running
+      //  h2 git warning sign
+      //  h2 diff
+      //  h2 merge
+      //  h2 revert
 
     script(src='build/build.js')

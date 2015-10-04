@@ -150,10 +150,6 @@ body {
   height: 6px;
 }
 
-.gitlogo {
-  max-width: 30%;
-}
-
 em, a {
   color: $quince-blue;
   font-style: normal;
@@ -163,14 +159,25 @@ small {
   font-size: 70%;
 }
 
-.bigsize {
+.gitlogo {
+  max-width: 30%;
+}
+
+.fullw {
   width: 100%;
 }
 
+.inline-img {
+  max-width: 70%;
+}
+
+.white {
+  color: $transparent-white;
+}
+
 .background {
+  background: no-repeat center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
   &.mindblown {
     background-image: url(../images/mindblown.gif);
@@ -184,13 +191,8 @@ small {
   &.git-puzzled {
     background-image: url(../images/git_training.gif);
   }
-}
 
-.snapshot {
-  width: 70%;
-}
-
-.white {
-  color: $transparent-white;
-
+  &.git-workflow {
+    background-image: url(../images/git_workflow.png);
+  }
 }
