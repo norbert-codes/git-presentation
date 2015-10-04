@@ -108,6 +108,12 @@ body {
 .bespoke-slide {
   background-color: #fafafa; }
 
+.bespoke-progress-bar {
+  background: #0172b4; }
+
+.bespoke-progress-parent {
+  height: 6px; }
+
 .gitlogo {
   max-width: 30%; }
 

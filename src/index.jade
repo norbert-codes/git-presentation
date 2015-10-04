@@ -105,6 +105,28 @@ html
         h2.white You may feel like...
 
 
+      section
+        h3 Recording Changes to the Repository
+        ul
+          li
+            img.snapshot(src="images/lifecycle.png")
+          li files can be in two states: <strong>tracked or untracked</strong>
+          li tracked files were in the last snapshot; they either <strong>unmodified,</strong> <strong>modified,</strong> or <strong>staged</strong>
+          li as you edit files, Git sees them as <strong>modified,</strong> because you’ve changed them since your last commit
+          li stage modified files and then <strong>commit all your staged changes,</strong> and the cycle repeats
+
+      section
+        h2 ignore
+        h2 skipping staging area
+        img.snapshot(src="images/git_workflow.png")
+
+      section
+        h2 You may use terminal for it, but thats unnecessary deep shit and you will hardly use it in your workflow
+        h2 using it in intellij
+        h2 I will get you up and running
+        h2 git warning sign
+
+
         //pre
         //  code.language-git.
         //    $ git push origin-master
