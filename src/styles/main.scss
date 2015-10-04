@@ -194,5 +194,10 @@ small {
 
   &.git-workflow {
     background-image: url(../images/git_workflow.png);
+    background-size: contain;
+  }
+
+  &.git-gif {
+    background-image: url(../images/git_workflow.gif);
   }
 }
