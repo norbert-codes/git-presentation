@@ -175,6 +175,11 @@ small {
   color: $transparent-white;
 }
 
+.dark-bg {
+  background-color: rgba(0,0,0,.6);
+  padding: 5px;
+}
+
 .background {
   background: no-repeat center;
   background-size: cover;
@@ -199,5 +204,9 @@ small {
 
   &.git-gif {
     background-image: url(../images/git_workflow.gif);
+  }
+
+  &.incaseoffire {
+    background-image: url(../images/incaseoffire.jpg);
   }
 }
