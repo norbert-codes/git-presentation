@@ -30,7 +30,7 @@
         </ul>
       </section>
       <section>
-        <h3>Just like a time machine</h3><img src="images/backtothefuture.gif" class="bigsize">
+        <h3>Just like a time machine</h3><img src="images/backtothefuture.gif" class="fullw">
       </section>
       <section>
         <h2>Why should I care?</h2>
@@ -70,7 +70,7 @@
           <li><strong>others:</strong> information as a list of file-based changes</li>
           <li><strong>Git:</strong> "set of snapshots of a miniature filesystem"</li>
           <li><small>Git takes a picture of what all your files look like at that moment and stores a reference to that snapshot. To be efficient, if files have not changed, Git doesn’t store the file again, just a link to the previous identical file it has already stored.</small></li>
-          <li><img src="images/snapshots.png" class="snapshot"></li>
+          <li><img src="images/snapshots.png" class="inline-img"></li>
         </ul>
       </section>
       <section>
@@ -89,18 +89,79 @@
           <li><strong>comitted</strong> (safely stored in local database)</li>
           <li><strong>modified</strong> (you changed it, but not stored in database yet)</li>
           <li><strong>staged</strong> (changed and marked to be in next commit)</li>
-          <li>+ <strong>pushed</strong> (copied to the remote repository from local database)</li>
+          <li><strong>+ pushed</strong> (copied to the remote repository from local database)</li>
           <li>three main sections of a Git project: the Git directory, the working directory, and the staging area</li>
-          <li><img src="images/stages.png" class="snapshot"></li>
+          <li><img src="images/stages.png" class="inline-img"></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Recording changes to the repository</h3>
+        <ul>
+          <li><img src="images/lifecycle.png" class="inline-img"></li>
+          <li>files can be in two states: <strong>tracked or untracked</strong></li>
+          <li>tracked files were in the last snapshot; they either <strong>unmodified,</strong> <strong>modified,</strong> or <strong>staged</strong></li>
+          <li>as you edit files, Git sees them as <strong>modified,</strong> because you’ve changed them since your last commit</li>
+          <li>stage modified files and then <strong>commit all your staged changes,</strong> and the cycle repeats</li>
         </ul>
       </section>
       <section class="background git-puzzled">
-        <h2 class="white">You may feel like...</h2>
-        <!--pre-->
-        <!--  code.language-git.-->
-        <!--    $ git push origin-master-->
+        <h2 class="white">You may start to feel like...</h2>
       </section>
+      <section>
+        <h2>Ignoring files</h2>
+        <ul>
+          <li></li>
+          <li>Often, you’ll have a class of files that you don’t want Git to automatically add or even show you as being untracked.</li>
+          <li>In such cases, you can create a file listing patterns to match them named <strong>.gitignore.</strong></li>
+          <li>
+            <pre><code class="language-git">/.idea
+prepros.cfg
+*.iml
+*.sublime-project
+.DS_Store
+/node_modules
+
+</code></pre>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Skipping the staging area</h2>
+        <p class="fullw">Although it can be amazingly useful for crafting commits exactly how you want them, the staging area is sometimes a bit more complex than you need in your workflow.</p>
+        <p class="fullw">If you want to skip the staging area, Git provides a simple shortcut.</p>
+        <ul>
+          <li></li>
+          <li>
+            <pre><code class="language-git">$ git commit -a</code></pre>
+            <p>makes Git automatically stage every file that is already tracked before doing the commit</p>
+          </li>
+        </ul>
+      </section>
+      <section class="background git-workflow"></section>
+      <section class="background git-gif">
+        <h2 class="white dark-bg">Basic Git workflow</h2>
+      </section>
+      <section>
+        <h2>Weapons of choice</h2><img src="images/tools.png" class="tools">
+        <p><small>Luckily there are many good tools to use Git, so no need to type commands into terminal any more</small></p>
+        <p>We prefer <strong>IntelliJ IDEA,</strong> which:</p>
+        <ul>
+          <li>is much more then a simple Git client [aka overkill as sh!t] :(</li>
+          <li><small>but...</small></li>
+          <li>has great graphical git interface</li>
+          <li>has powerful diff and merge tools</li>
+          <li>and of course as a <small>(extremely powerful)</small> code editor itself, you don't need to use an external editor</li>
+        </ul>
+      </section>
+      <section class="background incaseoffire"></section>
+      <section>
+        <h3>Sources, and reading</h3>
+        <p><a href="https://git-scm.com/book/en/v2">Pro Git book</a></p>
+        <p><a href="http://rogerdudler.github.io/git-guide/">git - the simple guide <small>by Roger Dudler</small></a></p>
+        <p><a href="https://www.jetbrains.com/idea/help/using-git-integration.html">Git integration in IntelliJ IDEA</a></p>
+        <h1 class="thanks">Thank you!</h1>
+      </section>
+      <script src="build/build.js"></script>
     </article>
-    <script src="build/build.js"></script>
   </body>
 </html>
