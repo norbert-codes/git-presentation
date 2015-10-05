@@ -121,8 +121,6 @@ pre[class*="language-"] {
 //==============================
 
 
-
-
 $white: #fafafa;
 $transparent-white: rgba(255,255,255,.8);
 $quince-blue: #0172b4;
@@ -180,6 +178,10 @@ small {
   padding: 5px;
 }
 
+.tools {
+  max-height: 30%;
+}
+
 .background {
   background: no-repeat center;
   background-size: cover;
@@ -208,5 +210,9 @@ small {
 
   &.incaseoffire {
     background-image: url(../images/incaseoffire.jpg);
+  }
+
+  &.dark {
+    background-color: $dark-grey;
   }
 }

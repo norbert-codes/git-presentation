@@ -137,6 +137,9 @@ small {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 5px; }
 
+.tools {
+  max-height: 30%; }
+
 .background {
   background: no-repeat center;
   background-size: cover; }
@@ -160,3 +163,6 @@ small {
 
 .background.incaseoffire {
   background-image: url(../images/incaseoffire.jpg); }
+
+.background.dark {
+  background-color: #303030; }
