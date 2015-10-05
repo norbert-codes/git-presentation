@@ -140,6 +140,9 @@ small {
 .tools {
   max-height: 30%; }
 
+.thanks {
+  padding-top: 20%; }
+
 .background {
   background: no-repeat center;
   background-size: cover; }
